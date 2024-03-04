@@ -52,3 +52,20 @@ function getGreetings() {
 
 
 /* Build a basic calculator that adds two numbers together and displays the result using JavaScript. */
+
+function addNumbers() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    // Check if both input fields are filled
+    if (!isNaN(num1) && !isNaN(num2)) {
+        // Add the numbers
+        var sum = num1 + num2;
+
+        // Display the result
+        document.getElementById("result").textContent = "Result (A+B): " + sum;
+    } else {
+        // Display an error message if any of the input fields are empty
+        document.getElementById("result").textContent = "Please enter valid numbers in both fields.";
+    }
+}
