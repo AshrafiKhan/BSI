@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message {
+    z-index: 999;
+    width: 50%;
+    /* display: block; */
+    position: absolute;
+    /* top: 70px; */
+    left: 25%;
+    animation: slideDown .2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .message {
+        width: 95%;
+        left: 0%;
+        margin: 0px 8px;
+    }
+}
